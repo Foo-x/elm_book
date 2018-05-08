@@ -126,7 +126,7 @@ JSからやってくる値はElmではMsgになります。なので`Msg`型を�
 そしてportで定義した関数を以下のように使います。
 
 ```elm
-type Msg = GetHello Strign                     --Msgの定義
+type Msg = GetHello String                     --Msgの定義
 
 port jsHello : (String -> msg) -> Sub msg      --JS -> Elm のport
 
